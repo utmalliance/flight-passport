@@ -104,7 +104,7 @@ class TokenView(views.TokenView):
             except AssertionError as ae:
                 id_value = token.application.client_id + "@clients"
 
-            extra_data["sub"] = str(id_value)
+            extra_data["sub"] = token_user.email
 
         payload = generate_payload(issuer, content["expires_in"], **extra_data)
 
