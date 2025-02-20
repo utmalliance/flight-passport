@@ -1,5 +1,5 @@
 idna==3.10
-Django==5.1.4
+Django==5.1.5
 python-dotenv==0.20.0
 cryptography==44.0.0
 pyjwt==2.10.1
